@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AC20190243A5D7600828837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2018F243A5D7600828837 /* AppDelegate.swift */; };
+		2AC20192243A5D7600828837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC20191243A5D7600828837 /* SceneDelegate.swift */; };
+		2AC20194243A5D7600828837 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC20193243A5D7600828837 /* ContentView.swift */; };
+		2AC20196243A5D7C00828837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC20195243A5D7C00828837 /* Assets.xcassets */; };
+		2AC20199243A5D7C00828837 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC20198243A5D7C00828837 /* Preview Assets.xcassets */; };
+		2AC2019C243A5D7C00828837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2019A243A5D7C00828837 /* LaunchScreen.storyboard */; };
+		2AC201A7243A5D7C00828837 /* SparkEvents_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC201A6243A5D7C00828837 /* SparkEvents_AppTests.swift */; };
+		2AC201B2243A5D7C00828837 /* SparkEvents_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC201B1243A5D7C00828837 /* SparkEvents_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AC201A3243A5D7C00828837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC20184243A5D7600828837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC2018B243A5D7600828837;
+			remoteInfo = "SparkEvents App";
+		};
+		2AC201AE243A5D7C00828837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AC20184243A5D7600828837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AC2018B243A5D7600828837;
+			remoteInfo = "SparkEvents App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AC2018C243A5D7600828837 /* SparkEvents App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SparkEvents App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC2018F243A5D7600828837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2AC20191243A5D7600828837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2AC20193243A5D7600828837 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AC20195243A5D7C00828837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AC20198243A5D7C00828837 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AC2019B243A5D7C00828837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2AC2019D243A5D7C00828837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC201A2243A5D7C00828837 /* SparkEvents AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SparkEvents AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC201A6243A5D7C00828837 /* SparkEvents_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkEvents_AppTests.swift; sourceTree = "<group>"; };
+		2AC201A8243A5D7C00828837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC201AD243A5D7C00828837 /* SparkEvents AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SparkEvents AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC201B1243A5D7C00828837 /* SparkEvents_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkEvents_AppUITests.swift; sourceTree = "<group>"; };
+		2AC201B3243A5D7C00828837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AC20189243A5D7600828837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC2019F243A5D7C00828837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC201AA243A5D7C00828837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC20183243A5D7600828837 = {
+			isa = PBXGroup;
+			children = (
+				2AC2018E243A5D7600828837 /* SparkEvents App */,
+				2AC201A5243A5D7C00828837 /* SparkEvents AppTests */,
+				2AC201B0243A5D7C00828837 /* SparkEvents AppUITests */,
+				2AC2018D243A5D7600828837 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AC2018D243A5D7600828837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AC2018C243A5D7600828837 /* SparkEvents App.app */,
+				2AC201A2243A5D7C00828837 /* SparkEvents AppTests.xctest */,
+				2AC201AD243A5D7C00828837 /* SparkEvents AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AC2018E243A5D7600828837 /* SparkEvents App */ = {
+			isa = PBXGroup;
+			children = (
+				2AC2018F243A5D7600828837 /* AppDelegate.swift */,
+				2AC20191243A5D7600828837 /* SceneDelegate.swift */,
+				2AC20193243A5D7600828837 /* ContentView.swift */,
+				2AC20195243A5D7C00828837 /* Assets.xcassets */,
+				2AC2019A243A5D7C00828837 /* LaunchScreen.storyboard */,
+				2AC2019D243A5D7C00828837 /* Info.plist */,
+				2AC20197243A5D7C00828837 /* Preview Content */,
+			);
+			path = "SparkEvents App";
+			sourceTree = "<group>";
+		};
+		2AC20197243A5D7C00828837 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AC20198243A5D7C00828837 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AC201A5243A5D7C00828837 /* SparkEvents AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC201A6243A5D7C00828837 /* SparkEvents_AppTests.swift */,
+				2AC201A8243A5D7C00828837 /* Info.plist */,
+			);
+			path = "SparkEvents AppTests";
+			sourceTree = "<group>";
+		};
+		2AC201B0243A5D7C00828837 /* SparkEvents AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AC201B1243A5D7C00828837 /* SparkEvents_AppUITests.swift */,
+				2AC201B3243A5D7C00828837 /* Info.plist */,
+			);
+			path = "SparkEvents AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AC2018B243A5D7600828837 /* SparkEvents App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC201B6243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents App" */;
+			buildPhases = (
+				2AC20188243A5D7600828837 /* Sources */,
+				2AC20189243A5D7600828837 /* Frameworks */,
+				2AC2018A243A5D7600828837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SparkEvents App";
+			productName = "SparkEvents App";
+			productReference = 2AC2018C243A5D7600828837 /* SparkEvents App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AC201A1243A5D7C00828837 /* SparkEvents AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC201B9243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents AppTests" */;
+			buildPhases = (
+				2AC2019E243A5D7C00828837 /* Sources */,
+				2AC2019F243A5D7C00828837 /* Frameworks */,
+				2AC201A0243A5D7C00828837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC201A4243A5D7C00828837 /* PBXTargetDependency */,
+			);
+			name = "SparkEvents AppTests";
+			productName = "SparkEvents AppTests";
+			productReference = 2AC201A2243A5D7C00828837 /* SparkEvents AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AC201AC243A5D7C00828837 /* SparkEvents AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AC201BC243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents AppUITests" */;
+			buildPhases = (
+				2AC201A9243A5D7C00828837 /* Sources */,
+				2AC201AA243A5D7C00828837 /* Frameworks */,
+				2AC201AB243A5D7C00828837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AC201AF243A5D7C00828837 /* PBXTargetDependency */,
+			);
+			name = "SparkEvents AppUITests";
+			productName = "SparkEvents AppUITests";
+			productReference = 2AC201AD243A5D7C00828837 /* SparkEvents AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AC20184243A5D7600828837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Cathy Han";
+				TargetAttributes = {
+					2AC2018B243A5D7600828837 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2AC201A1243A5D7C00828837 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2AC2018B243A5D7600828837;
+					};
+					2AC201AC243A5D7C00828837 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2AC2018B243A5D7600828837;
+					};
+				};
+			};
+			buildConfigurationList = 2AC20187243A5D7600828837 /* Build configuration list for PBXProject "SparkEvents App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AC20183243A5D7600828837;
+			productRefGroup = 2AC2018D243A5D7600828837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AC2018B243A5D7600828837 /* SparkEvents App */,
+				2AC201A1243A5D7C00828837 /* SparkEvents AppTests */,
+				2AC201AC243A5D7C00828837 /* SparkEvents AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AC2018A243A5D7600828837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC2019C243A5D7C00828837 /* LaunchScreen.storyboard in Resources */,
+				2AC20199243A5D7C00828837 /* Preview Assets.xcassets in Resources */,
+				2AC20196243A5D7C00828837 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC201A0243A5D7C00828837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC201AB243A5D7C00828837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AC20188243A5D7600828837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC20190243A5D7600828837 /* AppDelegate.swift in Sources */,
+				2AC20192243A5D7600828837 /* SceneDelegate.swift in Sources */,
+				2AC20194243A5D7600828837 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC2019E243A5D7C00828837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC201A7243A5D7C00828837 /* SparkEvents_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC201A9243A5D7C00828837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC201B2243A5D7C00828837 /* SparkEvents_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AC201A4243A5D7C00828837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC2018B243A5D7600828837 /* SparkEvents App */;
+			targetProxy = 2AC201A3243A5D7C00828837 /* PBXContainerItemProxy */;
+		};
+		2AC201AF243A5D7C00828837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AC2018B243A5D7600828837 /* SparkEvents App */;
+			targetProxy = 2AC201AE243A5D7C00828837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AC2019A243A5D7C00828837 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AC2019B243A5D7C00828837 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AC201B4243A5D7C00828837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AC201B5243A5D7C00828837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AC201B7243A5D7C00828837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SparkEvents App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SparkEvents App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AC201B8243A5D7C00828837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SparkEvents App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SparkEvents App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AC201BA243A5D7C00828837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SparkEvents AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkEvents App.app/SparkEvents App";
+			};
+			name = Debug;
+		};
+		2AC201BB243A5D7C00828837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SparkEvents AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SparkEvents App.app/SparkEvents App";
+			};
+			name = Release;
+		};
+		2AC201BD243A5D7C00828837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SparkEvents AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SparkEvents App";
+			};
+			name = Debug;
+		};
+		2AC201BE243A5D7C00828837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SparkEvents AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "convergent.SparkEvents-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SparkEvents App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AC20187243A5D7600828837 /* Build configuration list for PBXProject "SparkEvents App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC201B4243A5D7C00828837 /* Debug */,
+				2AC201B5243A5D7C00828837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC201B6243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC201B7243A5D7C00828837 /* Debug */,
+				2AC201B8243A5D7C00828837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC201B9243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC201BA243A5D7C00828837 /* Debug */,
+				2AC201BB243A5D7C00828837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AC201BC243A5D7C00828837 /* Build configuration list for PBXNativeTarget "SparkEvents AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC201BD243A5D7C00828837 /* Debug */,
+				2AC201BE243A5D7C00828837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AC20184243A5D7600828837 /* Project object */;
+}
