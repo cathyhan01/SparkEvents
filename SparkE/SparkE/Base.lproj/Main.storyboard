@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -118,6 +118,9 @@
                                                         <real key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="QxG-0D-wjB" kind="show" id="Q5r-xn-KTA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,84 +173,76 @@
         <!--View Controller-->
         <scene sceneID="Et2-US-bwX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPU-Vk-QuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="QxG-0D-wjB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZR9-5O-pcM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bhN-V2-5GI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" id="eRg-J3-0yn">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz8-xG-Nql">
+                                        <rect key="frame" x="0.0" y="71" width="414" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <items>
+                                            <tabBarItem title="Map" image="map" catalog="system" id="mOd-gI-Eyv"/>
+                                            <tabBarItem title="List View" image="list.dash" catalog="system" id="gjh-wV-CyN"/>
+                                            <tabBarItem systemItem="favorites" id="Ihv-K7-lLl"/>
+                                        </items>
+                                    </tabBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="216" translatesAutoresizingMaskIntoConstraints="NO" id="DbA-ae-UQc">
+                                        <rect key="frame" x="10.5" y="20" width="393" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhv-yV-VqR">
+                                                <rect key="frame" x="0.0" y="0.0" width="73" height="41"/>
+                                                <state key="normal" title="Navigation"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SparkE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7X-Yg-JuO">
+                                                <rect key="frame" x="289" y="0.0" width="104" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-hg-Pn3">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="776"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="DbA-ae-UQc" firstAttribute="centerX" secondItem="bhN-V2-5GI" secondAttribute="centerX" id="1u1-jL-atX"/>
+                                    <constraint firstItem="4E0-hg-Pn3" firstAttribute="top" secondItem="gz8-xG-Nql" secondAttribute="bottom" symbolic="YES" id="3VT-8f-s2n"/>
+                                    <constraint firstItem="4E0-hg-Pn3" firstAttribute="trailing" secondItem="gz8-xG-Nql" secondAttribute="trailing" id="6Ky-IH-bif"/>
+                                    <constraint firstAttribute="bottom" secondItem="4E0-hg-Pn3" secondAttribute="bottom" id="AGA-g6-qoa"/>
+                                    <constraint firstItem="gz8-xG-Nql" firstAttribute="top" secondItem="DbA-ae-UQc" secondAttribute="bottom" constant="10" id="BJg-yM-oQu"/>
+                                    <constraint firstItem="gz8-xG-Nql" firstAttribute="centerX" secondItem="bhN-V2-5GI" secondAttribute="centerX" id="Bkc-bV-n7k"/>
+                                    <constraint firstItem="DbA-ae-UQc" firstAttribute="top" secondItem="5WX-ur-eht" secondAttribute="top" constant="20" id="DKY-DY-rb2"/>
+                                    <constraint firstItem="gz8-xG-Nql" firstAttribute="leading" secondItem="eRg-J3-0yn" secondAttribute="leading" id="DeW-hp-UAd"/>
+                                    <constraint firstItem="4E0-hg-Pn3" firstAttribute="leading" secondItem="gz8-xG-Nql" secondAttribute="leading" id="LdS-XY-TpS"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="5WX-ur-eht"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vgI-Zt-rxz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EkL-4D-PUP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KPU-Vk-QuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1065" y="117"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="RcE-1o-TYS">
-            <objects>
-                <viewController id="Z2b-ui-G8F" customClass="ViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IPT-CP-ak6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient.jpg" id="JV5-mH-IeL">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                            </imageView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCb-5u-N6L">
-                                <rect key="frame" x="0.0" y="115" width="414" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Map" image="map" catalog="system" id="NpY-U9-GOd"/>
-                                    <tabBarItem title="List View" image="list.dash" catalog="system" id="cCK-c6-jht"/>
-                                    <tabBarItem systemItem="favorites" id="jV5-oB-Eyg"/>
-                                </items>
-                            </tabBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="216" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-6s-S3V">
-                                <rect key="frame" x="20" y="64" width="374" height="41"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-o8-7T2">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="41"/>
-                                        <state key="normal" title="Navigation"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spark" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwI-gL-YYZ">
-                                        <rect key="frame" x="289" y="0.0" width="85" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gCC-bd-TMp">
-                                <rect key="frame" x="0.0" y="164" width="414" height="732"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="gCC-bd-TMp" firstAttribute="trailing" secondItem="jCb-5u-N6L" secondAttribute="trailing" id="7XX-xK-5nj"/>
-                            <constraint firstItem="jCb-5u-N6L" firstAttribute="leading" secondItem="JV5-mH-IeL" secondAttribute="leading" id="AJR-Kz-nCe"/>
-                            <constraint firstItem="Whw-6s-S3V" firstAttribute="top" secondItem="5Ry-0s-nr5" secondAttribute="top" constant="20" id="TtG-HV-vZN"/>
-                            <constraint firstItem="jCb-5u-N6L" firstAttribute="top" secondItem="Whw-6s-S3V" secondAttribute="bottom" constant="10" id="VPu-Zo-gjN"/>
-                            <constraint firstItem="gCC-bd-TMp" firstAttribute="top" secondItem="jCb-5u-N6L" secondAttribute="bottom" symbolic="YES" id="XYr-fp-lmB"/>
-                            <constraint firstItem="Whw-6s-S3V" firstAttribute="centerX" secondItem="IPT-CP-ak6" secondAttribute="centerX" id="bgM-gk-xkY"/>
-                            <constraint firstItem="gCC-bd-TMp" firstAttribute="leading" secondItem="jCb-5u-N6L" secondAttribute="leading" id="lDq-yu-P7T"/>
-                            <constraint firstItem="jCb-5u-N6L" firstAttribute="centerX" secondItem="IPT-CP-ak6" secondAttribute="centerX" id="lce-gX-t2m"/>
-                            <constraint firstAttribute="bottom" secondItem="gCC-bd-TMp" secondAttribute="bottom" id="rkH-bV-NoK"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Ry-0s-nr5"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WNk-Mk-kxc" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.5" y="117.77343749999999"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="51" height="85"/>
-        <image name="gradient.jpg" width="16" height="16"/>
+        <image name="gradient" width="1024" height="600"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="map" catalog="system" width="64" height="56"/>
     </resources>
