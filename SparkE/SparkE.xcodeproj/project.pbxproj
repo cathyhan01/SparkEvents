@@ -22,6 +22,9 @@
 		2A1DC3C2244299F600073F95 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1DC3C1244299F600073F95 /* MapView.swift */; };
 		2A1DC3C72442A17400073F95 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1DC3C62442A17400073F95 /* EventData.swift */; };
 		2ABAA2832597EF6200CB0616 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAA2822597EF6200CB0616 /* StartViewController.swift */; };
+		2ABAA28B2599689500CB0616 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAA28A2599689500CB0616 /* LoginViewController.swift */; };
+		2ABAA290259968FC00CB0616 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAA28F259968FB00CB0616 /* SignUpViewController.swift */; };
+		2ABAA2952599693900CB0616 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABAA2942599693900CB0616 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		2A1DC3C1244299F600073F95 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2A1DC3C62442A17400073F95 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
 		2ABAA2822597EF6200CB0616 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		2ABAA28A2599689500CB0616 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2ABAA28F259968FB00CB0616 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2ABAA2942599693900CB0616 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 				2A1DC3B92442622E00073F95 /* RoundButton.swift */,
 				2A1DC38D244255F200073F95 /* Main.storyboard */,
 				2ABAA2822597EF6200CB0616 /* StartViewController.swift */,
+				2ABAA28A2599689500CB0616 /* LoginViewController.swift */,
+				2ABAA28F259968FB00CB0616 /* SignUpViewController.swift */,
+				2ABAA2942599693900CB0616 /* HomeViewController.swift */,
 				2A1DC390244255F700073F95 /* Assets.xcassets */,
 				2A1DC392244255F700073F95 /* LaunchScreen.storyboard */,
 				2A1DC395244255F700073F95 /* Info.plist */,
@@ -286,10 +295,13 @@
 				2A1DC3BA2442622F00073F95 /* RoundButton.swift in Sources */,
 				2A1DC3BE2442792600073F95 /* ContentView.swift in Sources */,
 				2ABAA2832597EF6200CB0616 /* StartViewController.swift in Sources */,
+				2ABAA290259968FC00CB0616 /* SignUpViewController.swift in Sources */,
 				2A1DC3C0244296C200073F95 /* CircleImage.swift in Sources */,
 				2A1DC38C244255F200073F95 /* ViewController.swift in Sources */,
 				2A1DC388244255F200073F95 /* AppDelegate.swift in Sources */,
 				2A1DC38A244255F200073F95 /* SceneDelegate.swift in Sources */,
+				2ABAA2952599693900CB0616 /* HomeViewController.swift in Sources */,
+				2ABAA28B2599689500CB0616 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

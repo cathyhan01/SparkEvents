@@ -10,10 +10,14 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
+
+    // MARK: Properties
+
+
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
-    
+
     func updateUIView(_ uiView: MKMapView, context: Context) {
         let coordinate = CLLocationCoordinate2D(
             latitude: 37.870539, longitude: -122.260604)

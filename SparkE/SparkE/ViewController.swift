@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
     
@@ -15,7 +16,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-        
+    
+//    @IBOutlet weak var mapView: MKMapView!
+//    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+    
+    
+    
+    // MARK: Actions
+    
+//    @IBAction func setLoginCreds(_ sender: RoundButton) {
+//    }
+    
+    
+    // MARK: - UITextFieldDelegate
+    
     let allowedEmailChars = CharacterSet(charactersIn:"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz@")
     let allowedPassChars = CharacterSet(charactersIn:"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz!@#$%^&*()-_+=")
 
@@ -31,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     func passwordField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let components = string.components(separatedBy: allowedPassChars)
+        let components = string.components(separatedBy: allowedEmailChars)
         let filtered = components.joined(separator: "")
         
         if string == filtered {
@@ -44,6 +58,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        locationManager.requestWhenInUseAuthorization()
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.distanceFilter = kCLDistanceFilterNone
+//        locationManager.startUpdatingLocation()
+//
+//        mapView.showsUserLocation = true
     }
 
 }
